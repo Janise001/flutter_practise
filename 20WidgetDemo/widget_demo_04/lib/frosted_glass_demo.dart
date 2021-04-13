@@ -1,6 +1,5 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
+import 'dart:ui';
 
 class FrostedGlassDemo extends StatelessWidget {
   @override
@@ -25,7 +24,10 @@ class FrostedGlassDemo extends StatelessWidget {
                       height: double.infinity,
                       width: double.infinity,
                       decoration: BoxDecoration(
-                        color: Colors.grey.shade500
+                        color: Colors.grey.shade500,
+                        boxShadow: [
+                          BoxShadow(color: Colors.blue,offset: Offset(5.0,5.0),blurRadius: 20,spreadRadius: 10.0),
+                        ]
                       ),
                       child: Text('Janise',style: Theme.of(context).textTheme.display3,),
                     ),
