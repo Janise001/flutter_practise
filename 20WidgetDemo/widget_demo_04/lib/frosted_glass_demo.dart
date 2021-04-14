@@ -8,28 +8,26 @@ class FrostedGlassDemo extends StatelessWidget {
       body: Center(
         child: Stack(
           children: [
-            ConstrainedBox(
-              constraints: BoxConstraints.expand(),
+            Center(
               child: Image.network(
                   'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2496571732,442429806&fm=26&gp=0.jpg'),
             ),
-            Center(
-              child: ClipRect(  // 可裁切矩形
-                child: BackdropFilter(  // 背景过滤器
-                  filter: ImageFilter.blur(sigmaX: 5.0, sigmaY: 5.0),
-                  child: Opacity(
-                    opacity: 0.5,
-                    child: Container(
-                      alignment: Alignment.center,
-                      height: double.infinity,
-                      width: double.infinity,
-                      decoration: BoxDecoration(
-                        color: Colors.grey.shade500,
-                        boxShadow: [
-                          BoxShadow(color: Colors.blue,offset: Offset(5.0,5.0),blurRadius: 20,spreadRadius: 10.0),
-                        ]
+            ClipRect(
+              child: BackdropFilter(
+                filter: ImageFilter.blur(sigmaX: 5.0, sigmaY: 5.0),
+                child: Opacity(
+                  opacity: 0.5,
+                  child: Container(
+                    width: double.infinity,
+                    height: double.infinity,
+                    decoration: BoxDecoration(
+                      color: Colors.grey.shade500,
+                    ),
+                    child: Center(
+                      child: Text(
+                        'Janise',
+                        style: Theme.of(context).textTheme.display3,
                       ),
-                      child: Text('Janise',style: Theme.of(context).textTheme.display3,),
                     ),
                   ),
                 ),
