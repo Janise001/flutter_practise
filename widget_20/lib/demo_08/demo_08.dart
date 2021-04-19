@@ -10,6 +10,18 @@ class Demo08 extends StatefulWidget {
 }
 
 class _Demo08State extends State<Demo08> {
+  List<ExpansionBean> _list;
+
+  @override
+  void initState() {
+    super.initState();
+    _list = List<ExpansionBean>();
+    for (int i = 0; i < 10; i++) {
+      ExpansionBean bean = ExpansionBean(i, false);
+      _list..add(bean);
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,25 +30,47 @@ class _Demo08State extends State<Demo08> {
       ),
       body: ListView(
         children: [
-          ExpansionPanelList(
-            expansionCallback: (int index, bool isExpanded) {},
+          ExpansionTile(
+            initiallyExpanded: false,
+            leading: Icon(Icons.ac_unit),
+            title: ListTile(
+              title: Text('title'),
+            ),
             children: [
-              ExpansionPanel(
-//                isExpanded: true,
-                headerBuilder: (context, isExpanded) {
-                  return Container(
-                    padding: EdgeInsets.all(16.0),
-                    child: Text('Item1'),
-                  );
-                },
-                body: Container(
-                  child: Text('Item1 description'),
-                ),
+              ListTile(
+                title: Text('childrenTitle'),
               ),
             ],
+          ),
+          ExpansionPanelList(
+            expansionCallback: (index,isExpanded){
+              setState(() {
+                _list[index].isOpen = !isExpanded;
+              });
+            },
+            children: _list.map((e) {
+              return ExpansionPanel(
+                isExpanded: e.isOpen,
+                headerBuilder: (context, isExpanded) {
+                  return ListTile(
+                    title: Text('这是第${e.index}行'),
+                  );
+                },
+                body: ListTile(
+                  title: Text('这是第${e.index}行内容'),
+                ),
+              );
+            }).toList(),
           ),
         ],
       ),
     );
   }
+}
+
+class ExpansionBean {
+  int index;
+  bool isOpen;
+
+  ExpansionBean(this.index, this.isOpen);
 }

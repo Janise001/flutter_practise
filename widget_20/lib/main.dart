@@ -7,6 +7,9 @@ import 'package:widget20/demo_05/demo_05.dart';
 import 'package:widget20/demo_06/demo_06.dart';
 import 'package:widget20/demo_07/demo_07.dart';
 import 'package:widget20/demo_08/demo_08.dart';
+import 'package:widget20/demo_09/demo_09.dart';
+import 'package:widget20/demo_10/demo_10.dart';
+import 'package:widget20/demo_11/demo_11.dart';
 
 main() => runApp(MyApp());
 
@@ -102,7 +105,8 @@ class HomeList extends StatelessWidget {
               }));
             },
           ),
-          Divider(),ListTile(
+          Divider(),
+          ListTile(
             title: Text('展开闭合案例ExpansionTile'),
             trailing: Icon(Icons.navigate_next),
             onTap: () {
@@ -113,6 +117,38 @@ class HomeList extends StatelessWidget {
             },
           ),
           Divider(),
+          ListTile(
+            title: Text('路径裁切和二次贝塞尔曲线'),
+            trailing: Icon(Icons.navigate_next),
+            onTap: () {
+              Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (BuildContext context) {
+                return Demo09('路径裁切和二次贝塞尔曲线');
+              }));
+            },
+          ),
+          Divider(),
+          ListTile(
+            title: Text('App闪屏动画制作'),
+            trailing: Icon(Icons.navigate_next),
+            onTap: () {
+              Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (BuildContext context) {
+                return Demo10('App闪屏动画制作');
+              }));
+            },
+          ),
+          Divider(),
+          ListTile(
+            title: Text('右滑返回上一页制作'),
+            trailing: Icon(Icons.navigate_next),
+            onTap: () {
+              Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (BuildContext context) {
+                return Demo11('右滑返回上一页制作');
+              }));
+            },
+          ),
         ],
       ),
     );
