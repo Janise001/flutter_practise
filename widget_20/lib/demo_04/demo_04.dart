@@ -29,7 +29,7 @@ class _Demo04State extends State<Demo04> {
               child: BackdropFilter(
                 filter: ImageFilter.blur(sigmaX: 5.0, sigmaY: 5.0),
                 child: Opacity(
-                  opacity: 0.4,
+                  opacity: 0.5,
                   child: Container(
                     child: Center(
                       child: Text(

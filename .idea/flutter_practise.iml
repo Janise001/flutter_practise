@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/20WidgetDemo/widget_demo_01/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/20WidgetDemo/widget_demo_01/build" />
+      <excludeFolder url="file://$MODULE_DIR$/20WidgetDemo/widget_demo_02/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/20WidgetDemo/widget_demo_02/build" />
+      <excludeFolder url="file://$MODULE_DIR$/20WidgetDemo/widget_demo_03/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/20WidgetDemo/widget_demo_03/build" />
+      <excludeFolder url="file://$MODULE_DIR$/20WidgetDemo/widget_demo_04/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/20WidgetDemo/widget_demo_04/build" />
+      <excludeFolder url="file://$MODULE_DIR$/20WidgetDemo/widget_demo_05/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/20WidgetDemo/widget_demo_05/build" />
+      <excludeFolder url="file://$MODULE_DIR$/20WidgetDemo/widget_demo_06/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/20WidgetDemo/widget_demo_06/build" />
+      <excludeFolder url="file://$MODULE_DIR$/20WidgetDemo/widget_demo_07/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/20WidgetDemo/widget_demo_07/build" />
+      <excludeFolder url="file://$MODULE_DIR$/20WidgetDemo/widget_demo_08/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/20WidgetDemo/widget_demo_08/build" />
+      <excludeFolder url="file://$MODULE_DIR$/20WidgetDemo/widget_demo_09/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/20WidgetDemo/widget_demo_09/build" />
+      <excludeFolder url="file://$MODULE_DIR$/20WidgetDemo/widget_demo_10/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/20WidgetDemo/widget_demo_10/build" />
+      <excludeFolder url="file://$MODULE_DIR$/20WidgetDemo/widget_demo_11/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/20WidgetDemo/widget_demo_11/build" />
+      <excludeFolder url="file://$MODULE_DIR$/20WidgetDemo/widget_demo_12/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/20WidgetDemo/widget_demo_12/build" />
+      <excludeFolder url="file://$MODULE_DIR$/20WidgetDemo/widget_demo_13/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/20WidgetDemo/widget_demo_13/build" />
+      <excludeFolder url="file://$MODULE_DIR$/widget_20/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/widget_20/build" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
