@@ -11,6 +11,7 @@ import 'package:widget20/demo_09/demo_09.dart';
 import 'package:widget20/demo_10/demo_10.dart';
 import 'package:widget20/demo_11/demo_11.dart';
 import 'package:widget20/demo_12/demo_12.dart';
+import 'package:widget20/demo_13/demo_13.dart';
 
 main() => runApp(MyApp());
 
@@ -149,7 +150,8 @@ class HomeList extends StatelessWidget {
                 return Demo11('右滑返回上一页制作');
               }));
             },
-          ), Divider(),
+          ),
+          Divider(),
           ListTile(
             title: Text('提示操作'),
             trailing: Icon(Icons.navigate_next),
@@ -157,6 +159,17 @@ class HomeList extends StatelessWidget {
               Navigator.of(context)
                   .push(MaterialPageRoute(builder: (BuildContext context) {
                 return Demo12('提示操作');
+              }));
+            },
+          ),
+          Divider(),
+          ListTile(
+            title: Text('可移动部件'),
+            trailing: Icon(Icons.navigate_next),
+            onTap: () {
+              Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (BuildContext context) {
+                return Demo13('可移动部件');
               }));
             },
           ),

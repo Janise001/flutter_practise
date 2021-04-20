@@ -40,8 +40,11 @@ class _Demo04State extends State<Demo04> {
 //                            fontWeight: FontWeight.bold,
 //                          )),
                         style: TextStyle(
-                            color: Theme.of(context).textTheme.display3.color,fontSize: 60.0,fontWeight: FontWeight.w800,letterSpacing: 15.0),
-
+                          color: Theme.of(context).textTheme.display3.color,
+                          fontSize: 60.0,
+                          fontWeight: FontWeight.w800,
+                          letterSpacing: 15.0,
+                        ),
                       ),
                     ),
                   ),
